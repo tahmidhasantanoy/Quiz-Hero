@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+
+    <!-- Custom CSS  -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="py-5">
+      <h2 class="text-center py-5"><u>Blog's Questions & Answers</u></h2>
+      <div
+        class="container-lg row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 p-3 pt-4 mx-auto"
+      >
+        <div class="col">
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item bg-secondary bg-opacity-10 p-3 mb-2">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button bg-secondary bg-opacity-10 text-black fs-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  What is Event Bubble?
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  Event Bubbling is a concept in the DOM . It happens when an
+                  element receives an event, and that event bubbles up to its
+                  parent and ancestor elements in the DOM tree until it gets to
+                  the root element.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-secondary bg-opacity-10 p-3 mb-2">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed bg-secondary bg-opacity-10 text-black fs-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  What is the different between map,filter & forEach methods?
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <u><strong>map</strong></u
+                  ><br />
+                  <b>Returing value : </b> A new array.<br />
+
+                  <hr />
+                  <strong><u>filter</u></strong
+                  ><br />
+                  <b>Returing value : </b> Conditionally matched value.<br />
+
+                  <hr />
+
+                  <strong><u>find</u></strong
+                  ><br />
+                  <b>Returing value : </b>Return first value which is
+                  conditionally matched.<br />
+                    <hr>
+                  <strong><u>forEach</u></strong
+                  ><br />
+                  <b>Returing value : </b> Return undefined.<br />
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-secondary bg-opacity-10 p-3 mb-2">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed bg-secondary bg-opacity-10 text-black fs-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  What is the different between local,sessional & cookies
+                  storage?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <u><strong>Cookies</strong></u
+                  ><br />
+                  <b>Expires : </b> Manually set.<br />
+                  <b>capacity : </b> 4kb.<br />
+                  <b>Storage location : </b> Browser & server.<br />
+                  <hr />
+                  <strong><u>Local storage</u></strong
+                  ><br />
+                  <b>Expires : </b> Never expires.<br />
+                  <b>capacity : </b> 10mb.<br />
+                  <b>Storage location : </b> Browser only.<br />
+                  <hr />
+                  <strong><u>Sessional storage</u></strong
+                  ><br />
+                  <b>Expires : </b> On tab close.<br />
+                  <b>capacity : </b> 5mb.<br />
+                  <b>Storage location : </b> Browser only.<br />
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-secondary bg-opacity-10 p-3 mb-2">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed bg-secondary bg-opacity-10 text-black fs-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  how quizTime & chooseQuiz work?
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <img src="./images/faq.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <script src="Js/bootstrap.min.js"></script>
+  </body>
+</html>
