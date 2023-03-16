@@ -83,7 +83,7 @@ document.querySelector("#submit").addEventListener("click", () => {
     return;
   }
 
-  quizTimer(true); //not defined maybe
+  quizTimer(true);
   answersContainer.innerHTML = `<div class="my-4">
   <i class="fa-solid fa-fan animate-spin text-2xl text-green-600"></i>
   <p class="text-xs animate-pulse">Please Wait, We are checking...</p>
@@ -116,10 +116,6 @@ document.querySelector("#submit").addEventListener("click", () => {
 
   // data setting on local storage and getting data from local storage
   let storage = JSON.parse(localStorage.getItem("results")); //prev
-  // let savedStorage = getLocalStorageItems(); //last
-  // console.log(savedStorage); // getLocalStorageItems() working
-
-
 
   if (storage) {
     localStorage.setItem(
@@ -149,8 +145,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   // Right side bar/ answer section
   let x = setTimeout(() => {
     showAnswers(answers);
-    displayResult.innerHTML = 
-    `<div
+    displayResult.innerHTML = `<div
          class="h-[220px] w-[220px] mx-auto mt-8 flex flex-col justify-center border-2 rounded-tr-[50%] rounded-bl-[50%]"
          >
        <h3 class="text-xl ${grade.color}">${grade.status}</h3>
@@ -174,7 +169,7 @@ document.querySelector("#submit").addEventListener("click", () => {
 
   ${
     storage
-       ?`<div class="mt-5">
+      ? `<div class="mt-5">
        <h1 class="text-center">Previous Submissions <button class="text-blue-800 text-xs" onclick={localStorage.clear();location.reload()}>Clear History</button></h1>
      <div
      class="flex justify-between items-center border rounded p-2 my-2 shadow-sm font-medium">
@@ -199,19 +194,7 @@ document.querySelector("#submit").addEventListener("click", () => {
   </div>
   `;
 
-
     clearTimeout(x);
   }, 1500);
   window.scrollTo(0, 0);
 });
-
-//Extra code for getting element
-const getLocalStorageItems = () => {
-  let itemsArray = [];
-  const savedResult = localStorage.getItem("results");
-  if (savedResult) {
-    itemsArray = JSON.parse(savedResult);
-  }
-  return itemsArray;
-};
-//Extra code for getting element
