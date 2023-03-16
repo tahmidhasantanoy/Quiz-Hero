@@ -4,12 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <title>Quiz Hero Blog</title>
     <link rel="stylesheet" href="CSS/bootstrap.min.css" />
-
-    <!-- Custom CSS  -->
-    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section class="py-5">
@@ -139,7 +135,7 @@
                   aria-expanded="false"
                   aria-controls="collapseThree"
                 >
-                  how quizTime & chooseQuiz work?
+                  How quizTime & chooseQuiz work?
                 </button>
               </h2>
               <div
@@ -149,7 +145,8 @@
                 data-bs-parent="#accordionExample"
               >
                 <div class="accordion-body">
-                  <strong><u>quizTimer</u></strong><br>
+                  <strong><u>quizTimer</u></strong
+                  ><br />
                   At first,Interpreter enter the function & check<u>dismiss</u>
                   parameter contain truthy value? if, yes then it stop counting
                   time by <u>clearInterval</u>.Then interpreter go to
@@ -157,12 +154,20 @@
                   and set time format. <br />
                   finally,it check time if it over 60 second then it become red
                   otherwise it stay green.
-                    <hr>
-                  <strong><u>quizTimer</u></strong><br>
-                  Interpreter enter chooseQuiz with <u>index</u> & <u>givenAns</u> array.After it check ans's id with quizData index id, if any match found then it enter loop & check every data where it correct, then it <u>spilce</u> <u>serial</u> remove one element & add <u>quizData[index]</u> and <u>givenAns</u>
-                  <br>
-                  On the otherhand,if no match in between ans's id with quizData index id then it push <u>quizData[index]</u> & <u>givenAns</u> as an object.
-                  finally it call <u>displayAnswers</u> to display answers.
+                  <hr />
+                  <strong><u>quizTimer</u></strong
+                  ><br />
+                  Interpreter enter chooseQuiz with <u>index</u> &
+                  <u>givenAns</u> array.After it check ans's id with quizData
+                  index id, if any match found then it enter loop & check every
+                  data where it correct, then it <u>spilce</u>
+                  <u>serial</u> remove one element & add
+                  <u>quizData[index]</u> and <u>givenAns</u>
+                  <br />
+                  On the otherhand,if no match in between ans's id with quizData
+                  index id then it push <u>quizData[index]</u> &
+                  <u>givenAns</u> as an object. finally it call
+                  <u>displayAnswers</u> to display answers.
                 </div>
               </div>
             </div>
